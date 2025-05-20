@@ -1,4 +1,4 @@
-@prefix : <http://www.semanticweb.org/24514/ontologies/2025/4/untitled-ontology-35#> .
+@prefix : <https://w3id.org/projects/soil-dsi-bridge#> 
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -6,9 +6,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <http://www.semanticweb.org/24514/ontologies/2025/4/untitled-ontology-35#> .
+@base <https://w3id.org/projects/soil-dsi-bridge#> .
 
-<http://www.semanticweb.org/24514/ontologies/2025/4/untitled-ontology-35#> rdf:type owl:Ontology ;
+<https://w3id.org/projects/soil-dsi-bridge> rdf:type owl:Ontology ;
     dcterms:title "Bridge Ontology between SOIL and D-SI"@en ;
     dcterms:title "Brückenontologie zwischen SOIL und D-SI"@de ;
     dcterms:created "2025-05-20"^^xsd:date ;
