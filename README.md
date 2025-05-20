@@ -45,6 +45,7 @@ FAIR bridge ontology between SOIL and D-SI(DCC)
 ## 🎓 创建者
 
 - **Z. D.** （ORCID: [0009‑0004‑9085‑4516](https://orcid.org/0009-0004-9085-4516)）
+- **K.W.**
 
 ---
 
