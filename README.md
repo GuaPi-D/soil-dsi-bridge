@@ -12,7 +12,7 @@ FAIR bridge ontology between SOIL and D-SI
 - **Persistent ID**：<https://w3id.org/projects/soil-dsi-bridge>
 - **版本**：1.0
 - **许可协议**：CC BY 4.0（[查看协议](https://creativecommons.org/licenses/by/4.0/)）
-- **作者**：[Z. D.](https://orcid.org/0009-0004-9085-4516)
+- **作者**：[Z. D.](https://orcid.org/0009-0004-9085-4516) and K.W.
 - **创建日期**：2025‑05‑20
 
 此桥接本体通过 `owl:equivalentClass`、`owl:equivalentProperty` 以及 `rdfs:subPropertyOf` 等关系，完成了测量量、数值、单位、时间、不确定度等核心元数据在两套本体中的双向对齐。
