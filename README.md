@@ -1,7 +1,9 @@
 # soil-dsi-bridge
 
 一个将 SOIL 本体与 D-SI 本体核心语义元素对齐的 FAIR 桥接本体
+
 A FAIR bridge ontology aligning core semantic elements of the SOIL and D-SI ontologies
+
 Eine FAIR Brückenontologie, die zentrale semantische Elemente der SOIL- und D-SI-Ontologien ausrichtet
 
 ---
