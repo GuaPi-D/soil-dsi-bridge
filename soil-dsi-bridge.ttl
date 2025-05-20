@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/projects/soil-dsi-bridge#> 
+@prefix : <https://w3id.org/projects/soil-dsi-bridge#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -8,11 +8,11 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @base <https://w3id.org/projects/soil-dsi-bridge#> .
 
-<https://w3id.org/projects/soil-dsi-bridge> rdf:type owl:Ontology ;
+<https://w3id.org/projects/soil-dsi-bridge#> rdf:type owl:Ontology ;
     dcterms:title "Bridge Ontology between SOIL and D-SI"@en ;
     dcterms:title "Brückenontologie zwischen SOIL und D-SI"@de ;
     dcterms:created "2025-05-20"^^xsd:date ;
-    dcterms:creator <https://orcid.org/0009-0004-9085-4516> ;
+    dcterms:creator <https://orcid.org/0009-0004-9085-4516>, "Kang Wang" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:description "This ontology bridges key semantic elements of the SOIL and D-SI ontologies to enable FAIR measurement data interoperability."@en ;
     dcterms:description "Diese Ontologie verbindet zentrale semantische Elemente der SOIL- und D-SI-Ontologien zur Unterstützung FAIRer Messdateninteroperabilität."@de ;
@@ -22,7 +22,7 @@
 #    Classes
 #################################################################
 
-###  http://www.w3.org/ns/sosa/ObservableProperty
+###   Typen
 sosa:ObservableProperty
     a owl:Class;
     owl:equivalentClass si:QuantityType ;
@@ -31,7 +31,7 @@ sosa:ObservableProperty
     rdfs:comment "文献指出在 所测量量的种类（如长度、温度等）"@zh.
 
 
-###  测量输出
+###  Ergebniswerte 
 sosa:Result 
     a owl:Class ;
     owl:equivalentClass si:QuantityValue;
@@ -43,7 +43,7 @@ sosa:Result
 #################################################################
 #    Data properties
 #################################################################
-### 测量值
+###  Werte
 qudt:value
     a owl:DatatypeProperty;
     owl:equivalentProperty si:hasvalue;
@@ -52,7 +52,7 @@ qudt:value
     rdfs:comment "qudt:value属性通常用于表示量值的数值,即一个 QuantityValue 实例所承载的具体数值。"@zh.
 
 
-###  时间戳
+###  Zeitstempel
 sosa:resultTime 
     a owl:DatatypeProperty;
     owl:equivalentProperty si:hasDateTime ;
@@ -65,7 +65,7 @@ sosa:resultTime
 #    Object Properties
 #################################################################
 
-###  http://qudt.org/schema/qudt/hasQuantityKind
+###  Größenart
 qudt:hasQuantityKind 
     a owl:ObjectProperty;
     owl:equivalentProperty si:hasQuantityType ;
@@ -83,7 +83,7 @@ qudt:unit
     rdfs:comment  "qudt:unit 被用于指明测量值的单位"@zh.
 
 
-####不确定度
+####  Standard-Unsicherheit
 m4i:hasUncertaintyDeclaration
     a owl:ObjectProperty ;
     rdfs:subPropertyOf si:hasStandardMU ;
@@ -92,8 +92,10 @@ m4i:hasUncertaintyDeclaration
     rdfs:comment "m4i:hasUncertaintyDeclaration 是 si:hasStandardMU 的子属性，表示标准不确定度。"@zh .
 
         
-####覆盖区间????
+####Unsicherheitsintervall????
 m4i:hasCoverageInterval
     a owl:ObjectProperty ;
     rdfs:subPropertyOf si:hasIntervalMin , si:hasIntervalMax ;
-    rdfs:comment "m4i:hasCoverageInterval 映射到 si:hasIntervalMin 与 si:hasIntervalMax,用于描述覆盖区间的端点。"@zh .
+    rdfs:comment  "The m4i:hasCoverageInterval property is mapped to si:hasIntervalMin and si:hasIntervalMax to describe the endpoints of a coverage interval."@en ;
+    rdfs:comment "Die Eigenschaft m4i:hasCoverageInterval wird auf si:hasIntervalMin und si:hasIntervalMax abgebildet, um die Endpunkte eines Abdeckungsintervalls zu beschreiben."@de;
+    rdfs:comment  "m4i:hasCoverageInterval 映射到 si:hasIntervalMin 与 si:hasIntervalMax,用于描述覆盖区间的端点。"@zh .
