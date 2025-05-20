@@ -1,5 +1,5 @@
 # soil-dsi-bridge
-FAIR bridge ontology between SOIL and D-SI
+FAIR bridge ontology between SOIL and D-SI(DCC)
 # SOIL ↔ D‑SI 桥接本体
 
 本项目提供一个 **桥接本体**，将 [SOIL 本体](https://purl.org/soil/) 与 [D‑SI 本体](https://ptb.de/si) 的核心语义元素对齐，旨在支持**FAIR**（可查找、可获取、可互操作、可重用）测量数据的互操作性。
@@ -8,7 +8,7 @@ FAIR bridge ontology between SOIL and D-SI
 
 ## 🚀 项目概述
 
-- **名称**：Bridge Ontology: SOIL ↔ D‑SI
+- **名称**：Bridge Ontology: SOIL ↔ D‑SI(DCC)
 - **Persistent ID**：<https://w3id.org/projects/soil-dsi-bridge>
 - **版本**：1.0
 - **许可协议**：CC BY 4.0（[查看协议](https://creativecommons.org/licenses/by/4.0/)）
