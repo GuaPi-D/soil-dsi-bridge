@@ -3,38 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title property="dct:title">Bridge Ontology: SOIL ↔ D-SI (DCC)</title>
+  <title>Bridge Ontology: SOIL ↔ D-SI (DCC)</title>
 
-  <!-- Dublin Core & DCAT structured metadata -->
+  <!-- Core Metadata for FAIR-checker -->
   <meta property="dct:title" content="Bridge Ontology: SOIL ↔ D-SI (DCC)">
   <meta property="dct:description" content="This ontology bridges core semantic concepts between SOIL and D-SI ontologies to support FAIR metrology data exchange.">
-  <meta property="dct:language" content="en">
   <meta property="dct:creator" content="Zeyuan D.; Kang Wang">
-  <meta property="dct:identifier" content="https://w3id.org/soil-dsi-bridge">
   <meta property="dct:issued" content="2025-05-20">
-  <meta property="dct:format" content="https://f-uji.net/vocab/data/format/long-term-file-format">
-  <meta property="dcat:accessURL" content="https://w3id.org/soil-dsi-bridge">
-  <meta property="dcat:downloadURL" content="https://w3id.org/soil-dsi-bridge/soil-dsi-bridge.ttl">
-  <meta property="dcat:endpointURL" content="https://w3id.org/soil-dsi-bridge">
-
-  <!-- Access and License metadata -->
-  <meta property="dct:license" content="https://creativecommons.org/licenses/by/4.0/">
-  <meta property="schema:license" content="https://creativecommons.org/licenses/by/4.0/">
+  <meta property="dct:identifier" content="https://w3id.org/soil-dsi-bridge">
   <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
-
-  <!-- Provenance metadata -->
+  <meta property="dct:license" content="https://creativecommons.org/licenses/by/4.0/">
   <meta property="prov:wasGeneratedBy" content="Soil-DSI Bridge development process">
   <meta property="pav:createdOn" content="2025-05-20">
   <meta property="pav:createdBy" content="https://orcid.org/0000-0004-9085-4516">
   <meta property="dct:isVersionOf" content="https://w3id.org/soil-dsi-bridge/v0.9">
   <meta property="dct:hasVersion" content="1.0">
+  <link rel="dcat:accessURL" href="https://w3id.org/soil-dsi-bridge">
+  <link rel="dcat:downloadURL" href="https://w3id.org/soil-dsi-bridge/soil-dsi-bridge.ttl">
 
-  <!-- f-uji property for format and identifiers -->
+  <!-- f-uji specific properties -->
   <meta property="fujimeta:object_identifier" content="https://w3id.org/soil-dsi-bridge">
   <meta property="fujimeta:object_content_identifier" content="https://w3id.org/soil-dsi-bridge/soil-dsi-bridge.ttl">
+  <meta property="dct:format" content="https://f-uji.net/vocab/data/format/long-term-file-format">
 
-  <!-- Machine-readable JSON-LD metadata -->
-  <link rel="alternate" type="application/ld+json" href="https://w3id.org/soil-dsi-bridge/metadata.jsonld">
+</head>
+<body>
+  <h1>Bridge Ontology: SOIL ↔ D-SI (DCC)</h1>
+  <p>This ontology bridges core semantic concepts between SOIL and D-SI ontologies to support FAIR metrology data exchange.</p>
+
+  <!-- Inline JSON-LD for f-uji and FAIR-checker -->
   <script type="application/ld+json">
   {
     "@context": {
@@ -57,14 +54,15 @@
     "dct:publisher": {"@type": "schema:Organization", "schema:name": "DataCite", "schema:url": "https://datacite.org"},
     "dct:issued": "2025-05-20",
     "schema:inLanguage": "en",
-    "dct:identifier": {"@type": "schema:PropertyValue", "propertyID": "DOI", "value": "10.1234/soil-dsi-bridge"},
+    "dct:identifier": {"@type": "schema:PropertyValue", "propertyID": "URL", "value": "https://w3id.org/soil-dsi-bridge"},
     "schema:url": "https://w3id.org/soil-dsi-bridge",
-    "schema:sameAs": "https://doi.org/10.1234/soil-dsi-bridge",
     "dct:conformsTo": [
       {"@id": "https://schema.datacite.org/meta/kernel-4.3/"},
       {"@id": "https://f-uji.net/vocab/metadata/standards"}
     ],
-    "dct:format": [{"@id": "https://f-uji.net/vocab/data/format/long-term-file-format"}],
+    "dct:format": [
+      {"@id": "https://f-uji.net/vocab/data/format/long-term-file-format", "@type": "fujiformat:long-term-file-format"}
+    ],
     "dct:license": {"@id": "https://creativecommons.org/licenses/by/4.0/"},
     "odrl:hasPolicy": {"@id": "https://creativecommons.org/licenses/by/4.0/"},
     "prov:wasGeneratedBy": "Soil-DSI Bridge development process",
@@ -74,25 +72,15 @@
     "dct:hasVersion": "1.0",
     "fujimeta:object_identifier": "https://w3id.org/soil-dsi-bridge",
     "fujimeta:object_content_identifier": "https://w3id.org/soil-dsi-bridge/soil-dsi-bridge.ttl",
-    "schema:keywords": ["ontology", "FAIR", "SOIL", "D-SI", "metrology"],
     "dcat:Distribution": [
-      {"@type": "dcat:Distribution", "dcat:downloadURL": "https://w3id.org/soil-dsi-bridge/soil-dsi-bridge.ttl", "dct:format": {"@id": "https://f-uji.net/vocab/data/format/long-term-file-format"}, "dcat:mediaType": "text/turtle", "dcat:byteSize": 17400},
-      {"@type": "dcat:Distribution", "dcat:downloadURL": "https://w3id.org/soil-dsi-bridge/metadata.jsonld", "dct:format": {"@id": "https://f-uji.net/vocab/data/format/long-term-file-format"}, "dcat:mediaType": "application/ld+json", "dcat:byteSize": 2345}
-    ],
-    "schema:variableMeasured": [
-      {"@type": "schema:PropertyValue", "schema:name": "MeasurementResult"},
-      {"@type": "schema:PropertyValue", "schema:name": "CoverageInterval"}
+      {"@type": "dcat:Distribution", "dcat:downloadURL": "https://w3id.org/soil-dsi-bridge/soil-dsi-bridge.ttl", "dcat:mediaType": "text/turtle", "dcat:byteSize": 17400, "fujiformat:long-term-file-format": true}
     ]
   }
   </script>
-</head>
-<body>
-  <h1>Bridge Ontology: SOIL ↔ D-SI (DCC)</h1>
-  <p>This ontology bridges core semantic concepts between SOIL and D-SI ontologies to support FAIR metrology data exchange.</p>
-  <p>Access the ontology: <a property="dcat:accessURL" href="https://w3id.org/soil-dsi-bridge">Soil-DSI Bridge</a></p>
-  <p>Creator ORCID: <a href="https://orcid.org/0000-0004-9085-4516">0000-0004-9085-4516</a></p>
-  <p>License: <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a></p>
-  <p>Formats: <a href="https://f-uji.net/vocab/data/format/long-term-file-format">long-term-file-format</a></p>
-  <p>Community metadata standards: DataCite Kernel and f-uji vocab</p>
+
+  <footer>
+    <p>License: <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a></p>
+    <p>Format: <a href="https://f-uji.net/vocab/data/format/long-term-file-format">long-term-file-format</a></p>
+  </footer>
 </body>
 </html>
