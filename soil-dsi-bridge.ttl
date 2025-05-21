@@ -6,6 +6,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix si: <https://ptb.de/si#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix m4i: <http://w3id.org/nfdi4ing/metadata4ing#> .
 @base <https://w3id.org/soil-dsi-bridge#> .
 
 <https://w3id.org/soil-dsi-bridge#> rdf:type owl:Ontology ;
