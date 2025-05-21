@@ -38,7 +38,6 @@
       "schema": "https://schema.org/",
       "dct": "http://purl.org/dc/terms/",
       "dcat": "http://www.w3.org/ns/dcat#",
-      "dcat:distribution": "http://www.w3.org/ns/dcat#distribution",
       "pav": "http://purl.org/pav/",
       "prov": "http://www.w3.org/ns/prov#",
       "odrl": "http://www.w3.org/ns/odrl#",
@@ -61,9 +60,7 @@
       {"@id": "https://schema.datacite.org/meta/kernel-4.3/"},
       {"@id": "https://f-uji.net/vocab/metadata/standards"}
     ],
-    "dct:format": [
-      {"@id": "https://f-uji.net/vocab/data/format/long-term-file-format"}
-    ],
+    "dct:format": [{"@id": "https://f-uji.net/vocab/data/format/long-term-file-format"}],
     "dct:license": {"@id": "https://creativecommons.org/licenses/by/4.0/"},
     "odrl:hasPolicy": {"@id": "https://creativecommons.org/licenses/by/4.0/"},
     "prov:wasGeneratedBy": "Soil-DSI Bridge development process",
@@ -71,12 +68,13 @@
     "pav:createdBy": [{"@id": "https://orcid.org/0000-0004-9085-4516"}],
     "dct:isVersionOf": "https://w3id.org/soil-dsi-bridge/v0.9",
     "dct:hasVersion": "1.0",
-    "fujimeta:object_identifier": "https://w3id.org/soil-dsi-bridge",
-    "fujimeta:object_content_identifier": "https://w3id.org/soil-dsi-bridge/soil-dsi-bridge.ttl",
+    "fujimeta:object_identifier": ["https://w3id.org/soil-dsi-bridge"],
+    "fujimeta:object_content_identifier": ["https://w3id.org/soil-dsi-bridge/soil-dsi-bridge.ttl"],
     "dcat:distribution": [
       {
         "@type": "dcat:Distribution",
         "dcat:downloadURL": "https://w3id.org/soil-dsi-bridge/soil-dsi-bridge.ttl",
+        "contentUrl": "https://w3id.org/soil-dsi-bridge/soil-dsi-bridge.ttl",
         "dct:format": {"@id": "https://f-uji.net/vocab/data/format/long-term-file-format"},
         "dcat:mediaType": "text/turtle",
         "dcat:byteSize": 17400
