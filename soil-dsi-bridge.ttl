@@ -20,7 +20,7 @@
     dcterms:description "This ontology bridges key semantic elements of the SOIL and D-SI ontologies to enable FAIR measurement data interoperability."@en ;
     dcterms:description "Diese Ontologie verbindet zentrale semantische Elemente der SOIL- und D-SI-Ontologien zur Unterstützung FAIRer Messdateninteroperabilität."@de ;
                                                                             owl:imports <file:/E:/PA/soil_ontology.owl> ,
-                                                                                        <https://ptb.de/si/v2.2.1/> .
+                                                                                        <https://ptb.de/si/v2.2.1/SI_Format.ttl> .
 #################################################################
 #    Classes
 #################################################################
