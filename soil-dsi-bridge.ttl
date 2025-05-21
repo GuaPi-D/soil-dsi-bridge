@@ -102,3 +102,12 @@ m4i:hasCoverageInterval
     rdfs:comment  "The m4i:hasCoverageInterval property is mapped to si:hasIntervalMin and si:hasIntervalMax to describe the endpoints of a coverage interval."@en ;
     rdfs:comment "Die Eigenschaft m4i:hasCoverageInterval wird auf si:hasIntervalMin und si:hasIntervalMax abgebildet, um die Endpunkte eines Abdeckungsintervalls zu beschreiben."@de;
     rdfs:comment  "m4i:hasCoverageInterval 映射到 si:hasIntervalMin 与 si:hasIntervalMax,用于描述覆盖区间的端点。"@zh .
+<https://w3id.org/soil-dsi-bridge>
+    a owl:Ontology ;
+    dcterms:title "Bridge Ontology: SOIL ↔ D‑SI (DCC)"@en ;
+    dcterms:description "This ontology bridges core semantic concepts between SOIL and D‑SI ontologies to support FAIR data exchange."@en ;
+    dcterms:creator <https://orcid.org/0000-0004-9085-4516> ;
+    dcterms:created "2025-05-20"^^xsd:date ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:seeAlso <https://purl.org/soil/>, <https://ptb.de/si/> ;
+    owl:versionInfo "1.0" .
