@@ -2,29 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Bridge Ontology: SOIL ↔ D‑SI (DCC)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- JSON-LD Metadata for FAIR compliance -->
+  <title>Bridge Ontology: SOIL ↔ D-SI (DCC)</title>
+  
+  <!-- JSON-LD Metadata for FAIR Compliance -->
   <script type="application/ld+json">
   {
     "@context": {
       "@vocab": "https://schema.org/",
       "dct": "http://purl.org/dc/terms/",
       "dcat": "http://www.w3.org/ns/dcat#",
-      "pav": "http://purl.org/pav/"
+      "pav": "http://purl.org/pav/",
+      "fujiformat": "https://f-uji.net/vocab/data/format/",
+      "fujimetadata": "https://f-uji.net/vocab/metadata/standards/",
+      "fujimeta": "https://f-uji.net/vocab/metadata/property/"
     },
     "@type": "Dataset",
-    "name": "Bridge Ontology: SOIL ↔ D‑SI (DCC)",
-    "description": "This ontology bridges core semantic concepts between SOIL and D‑SI ontologies to support FAIR metrology data exchange.",
+    "name": "Bridge Ontology: SOIL ↔ D-SI (DCC)",
+    "description": "This ontology bridges core semantic concepts between SOIL and D-SI ontologies to support FAIR metrology data exchange.",
     "url": "https://w3id.org/soil-dsi-bridge",
     "identifier": "https://w3id.org/soil-dsi-bridge",
     "alternateIdentifier": "doi:10.0000/soil-dsi-bridge",
-    "dct:accessRights": "https://creativecommons.org/licenses/by/4.0/",
-    "license": "https://creativecommons.org/licenses/by/4.0/",
     "creator": [
-      {"@type": "Person", "name": "Zeyuan D.", "identifier": "https://orcid.org/0000-0004-9085-4516"},
-      {"@type": "Person", "name": "Kang Wang"}
+      {
+        "@type": "Person",
+        "name": "Zeyuan D.",
+        "identifier": "https://orcid.org/0000-0004-9085-4516"
+      },
+      {
+        "@type": "Person",
+        "name": "Kang Wang"
+      }
     ],
+    "publisher": {
+      "@type": "Organization",
+      "name": "DataCite",
+      "url": "https://datacite.org"
+    },
     "datePublished": "2025-05-20",
     "pav:createdOn": "2025-05-20",
     "pav:createdBy": [
@@ -32,16 +46,26 @@
       {"@type": "Person", "name": "Kang Wang"}
     ],
     "version": "1.0",
-    "keywords": ["ontology", "FAIR", "SOIL", "D‑SI", "metrology"],
-    "distribution": {
-      "@type": "dcat:Distribution",
-      "dcat:downloadURL": "https://w3id.org/soil-dsi-bridge/soil-dsi-bridge.ttl",
-      "dcat:mediaType": "text/turtle",
-      "dcat:byteSize": 17400
+    "keywords": ["ontology", "FAIR", "SOIL", "D-SI", "metrology"],
+    "dct:conformsTo": {
+      "@id": "https://schema.datacite.org/meta/kernel-4.3/"
     },
-    "sameAs": [
-      "https://purl.org/soil/",
-      "https://ptb.de/si/"
+    "dct:format": {
+      "@id": "https://f-uji.net/vocab/data/format/long-term-file-format"
+    },
+    "fujimeta:access_level": {
+      "@id": "https://f-uji.net/vocab/metadata/property/access_level/open"
+    },
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "dct:accessRights": "https://creativecommons.org/licenses/by/4.0/",
+    "distribution": [
+      {
+        "@type": "dcat:Distribution",
+        "dcat:downloadURL": "https://w3id.org/soil-dsi-bridge/soil-dsi-bridge.ttl",
+        "dcat:mediaType": "text/turtle",
+        "dcat:byteSize": 17400,
+        "contentUrl": "https://w3id.org/soil-dsi-bridge/soil-dsi-bridge.ttl"
+      }
     ],
     "variableMeasured": [
       {"@type": "PropertyValue", "name": "MeasurementResult"},
@@ -49,49 +73,10 @@
     ]
   }
   </script>
-  <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 1em; line-height: 1.6; }
-    h1, h2 { color: #2c3e50; }
-    .section { margin-bottom: 2em; }
-    pre { background: #f8f8f8; padding: 0.5em; overflow-x: auto; }
-  </style>
 </head>
 <body>
-  <h1>🌐 SOIL ↔ D‑SI 桥接本体 / Bridge Ontology</h1>
-
-  <div class="section">
-    <h2>📘 简体中文说明</h2>
-    <p>此本体桥接了 <strong>SOIL</strong> 与 <strong>D‑SI (DCC)</strong> 本体之间的核心语义要素，以支持可查找、可获取、可互操作和可复用（FAIR）的测量数据交换。</p>
-    <p><strong>版本：</strong> 1.0</p>
-    <p><strong>创建时间：</strong> 2025-05-20</p>
-    <p><strong>作者：</strong> Zeyuan D., 王康</p>
-    <p><strong>许可：</strong> <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
-  </div>
-
-  <div class="section">
-    <h2>📄 English Description</h2>
-    <p>This ontology bridges core semantic elements between the <strong>SOIL</strong> and <strong>D‑SI (DCC)</strong> ontologies to enable FAIR (Findable, Accessible, Interoperable, Reusable) metrology data exchange.</p>
-    <p><strong>Version:</strong> 1.0</p>
-    <p><strong>Published:</strong> 2025-05-20</p>
-    <p><strong>Authors:</strong> Zeyuan D., Kang Wang</p>
-    <p><strong>License:</strong> <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
-  </div>
-
-  <div class="section">
-    <h2>🔗 Files & Distribution</h2>
-    <ul>
-      <li><a href="soil-dsi-bridge.ttl" download>Download TTL Ontology File</a></li>
-      <li><a href="https://w3id.org/soil-dsi-bridge/soil-dsi-bridge.ttl">View TTL via W3ID</a></li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>🔧 Usage / 使用方法</h2>
-    <pre><code>@prefix : &lt;https://w3id.org/soil-dsi-bridge#&gt; .
-@base &lt;https://w3id.org/soil-dsi-bridge#&gt; .
-
-&lt;https://w3id.org/soil-dsi-bridge&gt; a owl:Ontology .
-</code></pre>
-  </div>
+  <h1>Bridge Ontology: SOIL ↔ D-SI (DCC)</h1>
+  <p>This ontology bridges core semantic concepts between SOIL and D-SI ontologies to support FAIR metrology data exchange.</p>
+  <!-- 页面其他内容 -->
 </body>
 </html>
