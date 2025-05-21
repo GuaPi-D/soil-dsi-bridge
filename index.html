@@ -5,18 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title property="dct:title">Bridge Ontology: SOIL ↔ D-SI (DCC)</title>
 
-  <!-- Dublin Core & DCAT discoverability metadata -->
+  <!-- Dublin Core & DCAT structured metadata -->
   <meta property="dct:title" content="Bridge Ontology: SOIL ↔ D-SI (DCC)">
   <meta property="dct:description" content="This ontology bridges core semantic concepts between SOIL and D-SI ontologies to support FAIR metrology data exchange.">
   <meta property="dct:language" content="en">
   <meta property="dct:creator" content="Zeyuan D.; Kang Wang">
   <meta property="dct:identifier" content="https://w3id.org/soil-dsi-bridge">
   <meta property="dct:issued" content="2025-05-20">
-  <link rel="dcat:accessURL" href="https://w3id.org/soil-dsi-bridge">
-  <link rel="dcat:downloadURL" href="https://w3id.org/soil-dsi-bridge/soil-dsi-bridge.ttl">
+  <meta property="dcat:accessURL" content="https://w3id.org/soil-dsi-bridge">
+  <meta property="dcat:downloadURL" content="https://w3id.org/soil-dsi-bridge/soil-dsi-bridge.ttl">
+  <meta property="dcat:endpointURL" content="https://w3id.org/soil-dsi-bridge">
 
   <!-- License and rights metadata -->
-  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+  <meta property="schema:license" content="https://creativecommons.org/licenses/by/4.0/">
   <meta property="dct:license" content="https://creativecommons.org/licenses/by/4.0/">
   <meta property="dct:rights" content="Open under CC-BY 4.0">
   <meta property="odrl:hasPolicy" content="https://creativecommons.org/licenses/by/4.0/">
@@ -28,12 +29,8 @@
   <meta property="dct:isVersionOf" content="https://w3id.org/soil-dsi-bridge/v0.9">
   <meta property="dct:hasVersion" content="1.0">
 
-  <!-- External resource references to enrich diversity -->
-  <link rel="external" href="https://orcid.org/0000-0004-9085-4516">
-  <link rel="external" href="https://f-uji.net/vocab/data/format/long-term-file-format">
-  <link rel="external" href="https://schema.org/">
-
-  <!-- JSON-LD Metadata for FAIR compliance -->
+  <!-- Structured JSON-LD Metadata -->
+  <link rel="alternate" type="application/ld+json" href="https://w3id.org/soil-dsi-bridge/metadata.jsonld">
   <script type="application/ld+json">
   {
     "@context": {
@@ -54,11 +51,7 @@
     "dct:publisher": {"@type": "schema:Organization", "schema:name": "DataCite", "schema:url": "https://datacite.org"},
     "dct:issued": "2025-05-20",
     "schema:inLanguage": "en",
-    "dct:identifier": {
-      "@type": "schema:PropertyValue",
-      "propertyID": "DOI",
-      "value": "10.1234/soil-dsi-bridge"
-    },
+    "dct:identifier": {"@type": "schema:PropertyValue", "propertyID": "DOI", "value": "10.1234/soil-dsi-bridge"},
     "schema:url": "https://w3id.org/soil-dsi-bridge",
     "schema:sameAs": "https://doi.org/10.1234/soil-dsi-bridge",
     "dct:conformsTo": [
@@ -66,6 +59,7 @@
       {"@id": "https://f-uji.net/vocab/metadata/standards"}
     ],
     "dct:format": [{"@id": "https://f-uji.net/vocab/data/format/long-term-file-format"}],
+    "schema:license": "https://creativecommons.org/licenses/by/4.0/",
     "dct:license": {"@id": "https://creativecommons.org/licenses/by/4.0/"},
     "dct:rights": "Open under CC-BY 4.0",
     "odrl:hasPolicy": {"@id": "https://creativecommons.org/licenses/by/4.0/"},
@@ -76,18 +70,8 @@
     "dct:hasVersion": "1.0",
     "schema:keywords": ["ontology", "FAIR", "SOIL", "D-SI", "metrology"],
     "dcat:Distribution": [
-      {
-        "@type": "dcat:Distribution",
-        "dcat:downloadURL": "https://w3id.org/soil-dsi-bridge/soil-dsi-bridge.ttl",
-        "dcat:mediaType": "text/turtle",
-        "dcat:byteSize": 17400
-      },
-      {
-        "@type": "dcat:Distribution",
-        "dcat:downloadURL": "https://w3id.org/soil-dsi-bridge/metadata.jsonld",
-        "dcat:mediaType": "application/ld+json",
-        "dcat:byteSize": 2345
-      }
+      {"@type": "dcat:Distribution", "dcat:downloadURL": "https://w3id.org/soil-dsi-bridge/soil-dsi-bridge.ttl", "dcat:mediaType": "text/turtle", "dcat:byteSize": 17400},
+      {"@type": "dcat:Distribution", "dcat:downloadURL": "https://w3id.org/soil-dsi-bridge/metadata.jsonld", "dcat:mediaType": "application/ld+json", "dcat:byteSize": 2345}
     ],
     "schema:variableMeasured": [
       {"@type": "schema:PropertyValue", "schema:name": "MeasurementResult"},
