@@ -13,9 +13,10 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 @prefix pav:    <http://purl.org/pav/> .
 @prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
-
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
 <https://w3id.org/soil-dsi-bridge>
-    a              owl:Ontology ;
+    a               owl:Ontology,
+                    dcat:Dataset ;                     # <— 声明为数据集
     dcterms:title  "Bridge Ontology between SOIL and D-SI"@en ,
                    "Brückenontologie zwischen SOIL und D-SI"@de ;
     dcterms:description
@@ -24,19 +25,19 @@
     dcterms:creator [ a foaf:Person ; foaf:name "Kang Wang" ] ;
     dcterms:created "2025-05-20"^^xsd:date ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:format  "text/turtle" ;                   # <— 明确媒体类型
     owl:versionInfo "1.0" ;
     rdfs:seeAlso    <https://purl.org/soil/> ,
                    <https://ptb.de/si/> ;
     dcat:distribution [
       a               dcat:Distribution ;
-      dcat:downloadURL  <https://w3id.org/soil-dsi-bridge/soil-dsi-bridge.ttl> ;
-      dcat:mediaType    "text/turtle" ;
-      dcat:byteSize     17400 ;
+      dcat:downloadURL <https://w3id.org/soil-dsi-bridge/soil-dsi-bridge.ttl> ;
+      dcat:mediaType   "text/turtle" ;
+      dcat:byteSize    17400 ;
     ] ;
-    pav:createdBy    <https://orcid.org/0000-0004-9085-4516> ;
-    pav:createdOn    "2025-05-20"^^xsd:date ;
-                                                                            owl:imports <file:/E:/PA/soil_ontology.owl> ,
-                                                                                        <https://ptb.de/si/v2.2.1/SI_Format.ttl> .
+    pav:createdBy   <https://orcid.org/0000-0004-9085-4516> ;
+    pav:createdOn   "2025-05-20"^^xsd:date ;
+    .
 #################################################################
 #    Classes
 #################################################################
