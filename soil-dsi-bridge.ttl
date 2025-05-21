@@ -19,6 +19,12 @@
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:description "This ontology bridges key semantic elements of the SOIL and D-SI ontologies to enable FAIR measurement data interoperability."@en ;
     dcterms:description "Diese Ontologie verbindet zentrale semantische Elemente der SOIL- und D-SI-Ontologien zur Unterstützung FAIRer Messdateninteroperabilität."@de ;
+      dcat:distribution [
+    a dcat:Distribution ;
+    dcat:downloadURL <https://w3id.org/soil-dsi-bridge/soil-dsi-bridge.ttl> ;
+    dcat:mediaType "text/turtle" ;
+    dcat:byteSize 17400 ;
+     ] ;
                                                                             owl:imports <file:/E:/PA/soil_ontology.owl> ,
                                                                                         <https://ptb.de/si/v2.2.1/SI_Format.ttl> .
 #################################################################
