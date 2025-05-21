@@ -14,7 +14,7 @@
 @prefix pav:    <http://purl.org/pav/> .
 @prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
 
-<https://w3id.org/soil-dsi-bridge#>
+<https://w3id.org/soil-dsi-bridge>
     a              owl:Ontology ;
     dcterms:title  "Bridge Ontology between SOIL and D-SI"@en ,
                    "Brückenontologie zwischen SOIL und D-SI"@de ;
@@ -35,8 +35,6 @@
     ] ;
     pav:createdBy    <https://orcid.org/0000-0004-9085-4516> ;
     pav:createdOn    "2025-05-20"^^xsd:date ;
-    .
-
                                                                             owl:imports <file:/E:/PA/soil_ontology.owl> ,
                                                                                         <https://ptb.de/si/v2.2.1/SI_Format.ttl> .
 #################################################################
