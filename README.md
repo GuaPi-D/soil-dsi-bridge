@@ -37,7 +37,7 @@ Eine FAIR Brückenontologie, die zentrale semantische Elemente der SOIL- und D-S
 @prefix bridge: <https://w3id.org/soil-dsi-bridge#> .
 @base  <https://w3id.org/soil-dsi-bridge#> .
 
-<https://w3id.org/projects/soil-dsi-bridge>
+<https://w3id.org/soil-dsi-bridge>
     a owl:Ontology .
 ```
 
