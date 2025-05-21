@@ -42,10 +42,16 @@ optimized_index_html = '''<!DOCTYPE html>
     "version": "1.0",
     "keywords": ["ontology", "FAIR", "SOIL", "D‑SI", "metrology"],
     "distribution": {
-      "@type": "dcat:Distribution",
-      "dcat:downloadURL": "https://w3id.org/soil-dsi-bridge/soil-dsi-bridge.ttl",
-      "encodingFormat": "text/turtle"
-    },
+  "@type": "DataDownload", 
+  "contentUrl": "https://w3id.org/soil-dsi-bridge/soil-dsi-bridge.ttl",
+  "encodingFormat": "text/turtle",
+  "contentSize": "17.4 KB",
+  "variableMeasured": [
+    { "@type": "PropertyValue", "name": "MeasurementResult" },
+    { "@type": "PropertyValue", "name": "CoverageInterval" }
+  ]
+},
+
     "sameAs": [
       "https://purl.org/soil/",
       "https://ptb.de/si/"
