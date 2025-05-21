@@ -23,6 +23,8 @@
     "url": "https://w3id.org/soil-dsi-bridge",
     "identifier": "https://w3id.org/soil-dsi-bridge",
     "alternateIdentifier": "doi:10.0000/soil-dsi-bridge",
+    "fujimeta:object_identifier": "https://w3id.org/soil-dsi-bridge",
+    "fujimeta:object_content_identifier": "https://w3id.org/soil-dsi-bridge/soil-dsi-bridge.ttl",
     "creator": [
       {
         "@type": "Person",
@@ -47,26 +49,30 @@
     ],
     "version": "1.0",
     "keywords": ["ontology", "FAIR", "SOIL", "D-SI", "metrology"],
-    "dct:conformsTo": {
+
+    "dct:conformsTo": [{
       "@id": "https://schema.datacite.org/meta/kernel-4.3/"
-    },
-    "dct:format": {
+    }],
+
+    "dct:format": [{
       "@id": "https://f-uji.net/vocab/data/format/long-term-file-format"
-    },
-    "fujimeta:access_level": {
-      "@id": "https://f-uji.net/vocab/metadata/property/access_level/open"
-    },
+    }],
+
+    "fujimeta:access_level": "https://f-uji.net/vocab/metadata/property/access_level/open",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "dct:accessRights": "https://creativecommons.org/licenses/by/4.0/",
+
     "distribution": [
       {
         "@type": "dcat:Distribution",
         "dcat:downloadURL": "https://w3id.org/soil-dsi-bridge/soil-dsi-bridge.ttl",
+        "dct:format": {"@id": "https://f-uji.net/vocab/data/format/long-term-file-format"},
         "dcat:mediaType": "text/turtle",
         "dcat:byteSize": 17400,
         "contentUrl": "https://w3id.org/soil-dsi-bridge/soil-dsi-bridge.ttl"
       }
     ],
+
     "variableMeasured": [
       {"@type": "PropertyValue", "name": "MeasurementResult"},
       {"@type": "PropertyValue", "name": "CoverageInterval"}
