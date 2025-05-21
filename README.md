@@ -21,7 +21,7 @@ Eine FAIR Brückenontologie, die zentrale semantische Elemente der SOIL- und D-S
 ### 项目概述 🚀
 
 * **名称**：Bridge Ontology: SOIL ↔ D-SI(DCC)
-* **Persistent ID**：[https://w3id.org/projects/soil-dsi-bridge](https://w3id.org/projects/soil-dsi-bridge)
+* **Persistent ID**：[https://w3id.org/soil-dsi-bridge](https://w3id.org/projects/soil-dsi-bridge)
 * **版本**：1.0
 * **许可协议**：CC BY 4.0（[查看协议](https://creativecommons.org/licenses/by/4.0/)）
 * **作者**：Z. D.（ORCID: [0009-0004-9085-4516](https://orcid.org/0009-0004-9085-4516)）、K. W.
@@ -34,8 +34,8 @@ Eine FAIR Brückenontologie, die zentrale semantische Elemente der SOIL- und D-S
 在 Turtle 文件开头导入并声明命名空间：
 
 ```ttl
-@prefix bridge: <https://w3id.org/projects/soil-dsi-bridge#> .
-@base  <https://w3id.org/projects/soil-dsi-bridge#> .
+@prefix bridge: <https://w3id.org/soil-dsi-bridge#> .
+@base  <https://w3id.org/soil-dsi-bridge#> .
 
 <https://w3id.org/projects/soil-dsi-bridge>
     a owl:Ontology .
@@ -44,7 +44,7 @@ Eine FAIR Brückenontologie, die zentrale semantische Elemente der SOIL- und D-S
 或者在 OWL/XML 应用中引用：
 
 ```xml
-<owl:Ontology rdf:about="https://w3id.org/projects/soil-dsi-bridge"/>
+<owl:Ontology rdf:about="https://w3id.org/soil-dsi-bridge"/>
 ```
 
 **本体文件下载**
@@ -59,7 +59,7 @@ Eine FAIR Brückenontologie, die zentrale semantische Elemente der SOIL- und D-S
 ### 引用方式 📖
 
 ```
-Z. D. (2025). Bridge Ontology: SOIL ↔ D-SI. Version 1.0. CC BY 4.0. Available at https://w3id.org/projects/soil-dsi-bridge
+Z. D. (2025). Bridge Ontology: SOIL ↔ D-SI. Version 1.0. CC BY 4.0. Available at https://w3id.org/soil-dsi-bridge
 ```
 
 ---
@@ -82,17 +82,17 @@ This bridge ontology uses mappings such as `owl:equivalentClass`, `owl:equivalen
 Import in Turtle:
 
 ```ttl
-@prefix bridge: <https://w3id.org/projects/soil-dsi-bridge#> .
-@base  <https://w3id.org/projects/soil-dsi-bridge#> .
+@prefix bridge: <https://w3id.org/soil-dsi-bridge#> .
+@base  <https://w3id.org/soil-dsi-bridge#> .
 
-<https://w3id.org/projects/soil-dsi-bridge>
+<https://w3id.org/soil-dsi-bridge>
     a owl:Ontology .
 ```
 
 Or reference in OWL/XML:
 
 ```xml
-<owl:Ontology rdf:about="https://w3id.org/projects/soil-dsi-bridge"/>
+<owl:Ontology rdf:about="https://w3id.org/soil-dsi-bridge"/>
 ```
 
 **Download**
@@ -117,7 +117,7 @@ Z. D. (2025). Bridge Ontology: SOIL ↔ D-SI. Version 1.0. CC BY 4.0. Available 
 ### Projektübersicht 🚀
 
 * **Name**: Brückenontologie: SOIL ↔ D-SI(DCC)
-* **Persistent ID**: [https://w3id.org/projects/soil-dsi-bridge](https://w3id.org/projects/soil-dsi-bridge)
+* **Persistent ID**: [https://w3id.org/soil-dsi-bridge](https://w3id.org/soil-dsi-bridge)
 * **Version**: 1.0
 * **Lizenz**: CC BY 4.0 ([Lizenzdetails](https://creativecommons.org/licenses/by/4.0/))
 * **Autoren**: Z. D. (ORCID: [0009-0004-9085-4516](https://orcid.org/0009-0004-9085-4516)), K. W.
@@ -130,17 +130,17 @@ Diese Brückenontologie verwendet Mappings wie `owl:equivalentClass`, `owl:equiv
 Import als Turtle:
 
 ```ttl
-@prefix bridge: <https://w3id.org/projects/soil-dsi-bridge#> .
-@base  <https://w3id.org/projects/soil-dsi-bridge#> .
+@prefix bridge: <https://w3id.org/soil-dsi-bridge#> .
+@base  <https://w3id.org/soil-dsi-bridge#> .
 
-<https://w3id.org/projects/soil-dsi-bridge>
+<https://w3id.org/soil-dsi-bridge>
     a owl:Ontology .
 ```
 
 Oder in OWL/XML referenzieren:
 
 ```xml
-<owl:Ontology rdf:about="https://w3id.org/projects/soil-dsi-bridge"/>
+<owl:Ontology rdf:about="https://w3id.org/soil-dsi-bridge"/>
 ```
 
 **Download der Ontologie**
