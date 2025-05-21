@@ -1,71 +1,97 @@
 <!DOCTYPE html>
-<html lang="en" prefix="schema: https://schema.org/ dct: http://purl.org/dc/terms/">
+<html lang="en" prefix="schema: https://schema.org/ dct: http://purl.org/dc/terms/ dcat: http://www.w3.org/ns/dcat# pav: http://purl.org/pav/ prov: http://www.w3.org/ns/prov# odrl: http://www.w3.org/ns/odrl#">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bridge Ontology: SOIL ↔ D-SI (DCC)</title>
+  <title property="dct:title">Bridge Ontology: SOIL ↔ D-SI (DCC)</title>
 
-  <!-- Dublin Core meta tags for FAIR-checker -->
-  <meta name="DC.title" content="Bridge Ontology: SOIL ↔ D-SI (DCC)">
-  <meta name="DC.creator" content="Zeyuan D.; Kang Wang">
-  <meta name="DC.date" content="2025-05-20">
-  <meta name="DC.identifier" content="https://w3id.org/soil-dsi-bridge">
-  <meta name="DC.publisher" content="DataCite">
-  <meta name="DC.description" content="This ontology bridges core semantic concepts between SOIL and D-SI ontologies to support FAIR metrology data exchange.">
-  <meta name="DC.language" content="en">
+  <!-- Dublin Core & DCAT discoverability metadata -->
+  <meta property="dct:title" content="Bridge Ontology: SOIL ↔ D-SI (DCC)">
+  <meta property="dct:description" content="This ontology bridges core semantic concepts between SOIL and D-SI ontologies to support FAIR metrology data exchange.">
+  <meta property="dct:language" content="en">
+  <meta property="dct:creator" content="Zeyuan D.; Kang Wang">
+  <meta property="dct:identifier" content="https://w3id.org/soil-dsi-bridge">
+  <meta property="dct:issued" content="2025-05-20">
+  <link rel="dcat:accessURL" href="https://w3id.org/soil-dsi-bridge">
+  <link rel="dcat:downloadURL" href="https://w3id.org/soil-dsi-bridge/soil-dsi-bridge.ttl">
 
-  <!-- License and metadata links -->
+  <!-- License and rights metadata -->
   <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
-  <link rel="alternate" type="application/ld+json" href="https://w3id.org/soil-dsi-bridge/metadata.jsonld">
+  <meta property="dct:license" content="https://creativecommons.org/licenses/by/4.0/">
+  <meta property="dct:rights" content="Open under CC-BY 4.0">
+  <meta property="odrl:hasPolicy" content="https://creativecommons.org/licenses/by/4.0/">
 
-  <!-- JSON-LD Metadata for FAIR Compliance -->
+  <!-- Provenance metadata -->
+  <meta property="prov:wasGeneratedBy" content="Soil-DSI Bridge development process">
+  <meta property="pav:createdOn" content="2025-05-20">
+  <meta property="pav:createdBy" content="https://orcid.org/0000-0004-9085-4516">
+  <meta property="dct:isVersionOf" content="https://w3id.org/soil-dsi-bridge/v0.9">
+  <meta property="dct:hasVersion" content="1.0">
+
+  <!-- External resource references to enrich diversity -->
+  <link rel="external" href="https://orcid.org/0000-0004-9085-4516">
+  <link rel="external" href="https://f-uji.net/vocab/data/format/long-term-file-format">
+  <link rel="external" href="https://schema.org/">
+
+  <!-- JSON-LD Metadata for FAIR compliance -->
   <script type="application/ld+json">
   {
     "@context": {
-      "@vocab": "https://schema.org/",
+      "schema": "https://schema.org/",
       "dct": "http://purl.org/dc/terms/",
       "dcat": "http://www.w3.org/ns/dcat#",
-      "pav": "http://purl.org/pav/"
+      "pav": "http://purl.org/pav/",
+      "prov": "http://www.w3.org/ns/prov#",
+      "odrl": "http://www.w3.org/ns/odrl#"
     },
-    "@type": "Dataset",
-    "schema:name": "Bridge Ontology: SOIL ↔ D-SI (DCC)",
-    "schema:description": "This ontology bridges core semantic concepts between SOIL and D-SI ontologies to support FAIR metrology data exchange.",
-    "schema:identifier": {
-      "@type": "PropertyValue",
+    "@type": "schema:Dataset",
+    "dct:title": "Bridge Ontology: SOIL ↔ D-SI (DCC)",
+    "dct:description": "This ontology bridges core semantic concepts between SOIL and D-SI ontologies to support FAIR metrology data exchange.",
+    "dct:creator": [
+      {"@type": "schema:Person", "schema:name": "Zeyuan D.", "schema:identifier": "https://orcid.org/0000-0004-9085-4516"},
+      {"@type": "schema:Person", "schema:name": "Kang Wang"}
+    ],
+    "dct:publisher": {"@type": "schema:Organization", "schema:name": "DataCite", "schema:url": "https://datacite.org"},
+    "dct:issued": "2025-05-20",
+    "schema:inLanguage": "en",
+    "dct:identifier": {
+      "@type": "schema:PropertyValue",
       "propertyID": "DOI",
       "value": "10.1234/soil-dsi-bridge"
     },
     "schema:url": "https://w3id.org/soil-dsi-bridge",
-    "schema:sameAs": "doi:10.1234/soil-dsi-bridge",
-    "schema:creator": [
-      {"@type": "Person", "schema:name": "Zeyuan D.", "schema:identifier": "https://orcid.org/0000-0004-9085-4516"},
-      {"@type": "Person", "schema:name": "Kang Wang"}
+    "schema:sameAs": "https://doi.org/10.1234/soil-dsi-bridge",
+    "dct:conformsTo": [
+      {"@id": "https://schema.datacite.org/meta/kernel-4.3/"},
+      {"@id": "https://f-uji.net/vocab/metadata/standards"}
     ],
-    "schema:publisher": {"@type": "Organization", "schema:name": "DataCite", "schema:url": "https://datacite.org"},
-    "dct:issued": "2025-05-20",
-    "schema:inLanguage": "en",
-    "schema:version": "1.0",
+    "dct:format": [{"@id": "https://f-uji.net/vocab/data/format/long-term-file-format"}],
+    "dct:license": {"@id": "https://creativecommons.org/licenses/by/4.0/"},
+    "dct:rights": "Open under CC-BY 4.0",
+    "odrl:hasPolicy": {"@id": "https://creativecommons.org/licenses/by/4.0/"},
+    "prov:wasGeneratedBy": "Soil-DSI Bridge development process",
+    "pav:createdOn": "2025-05-20",
+    "pav:createdBy": [{"@id": "https://orcid.org/0000-0004-9085-4516"}],
+    "dct:isVersionOf": "https://w3id.org/soil-dsi-bridge/v0.9",
+    "dct:hasVersion": "1.0",
     "schema:keywords": ["ontology", "FAIR", "SOIL", "D-SI", "metrology"],
-    "dct:conformsTo": {"@id": "https://schema.datacite.org/meta/kernel-4.3/"},
-    "dct:format": {"@id": "https://f-uji.net/vocab/data/format/long-term-file-format"},
-    "schema:license": "https://creativecommons.org/licenses/by/4.0/",
-    "schema:distribution": [
+    "dcat:Distribution": [
       {
-        "@type": "DataDownload",
-        "encodingFormat": "text/turtle",
-        "contentUrl": "https://w3id.org/soil-dsi-bridge/soil-dsi-bridge.ttl",
-        "contentSize": 17400
+        "@type": "dcat:Distribution",
+        "dcat:downloadURL": "https://w3id.org/soil-dsi-bridge/soil-dsi-bridge.ttl",
+        "dcat:mediaType": "text/turtle",
+        "dcat:byteSize": 17400
       },
       {
-        "@type": "DataDownload",
-        "encodingFormat": "application/ld+json",
-        "contentUrl": "https://w3id.org/soil-dsi-bridge/metadata.jsonld",
-        "contentSize": 2345
+        "@type": "dcat:Distribution",
+        "dcat:downloadURL": "https://w3id.org/soil-dsi-bridge/metadata.jsonld",
+        "dcat:mediaType": "application/ld+json",
+        "dcat:byteSize": 2345
       }
     ],
     "schema:variableMeasured": [
-      {"@type": "PropertyValue", "schema:name": "MeasurementResult"},
-      {"@type": "PropertyValue", "schema:name": "CoverageInterval"}
+      {"@type": "schema:PropertyValue", "schema:name": "MeasurementResult"},
+      {"@type": "schema:PropertyValue", "schema:name": "CoverageInterval"}
     ]
   }
   </script>
@@ -73,5 +99,9 @@
 <body>
   <h1>Bridge Ontology: SOIL ↔ D-SI (DCC)</h1>
   <p>This ontology bridges core semantic concepts between SOIL and D-SI ontologies to support FAIR metrology data exchange.</p>
+  <p>Access the ontology: <a property="dcat:accessURL" href="https://w3id.org/soil-dsi-bridge">Soil-DSI Bridge</a></p>
+  <p>Creator ORCID: <a href="https://orcid.org/0000-0004-9085-4516">0000-0004-9085-4516</a></p>
+  <p>License: <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a></p>
+  <p>Community metadata standards: DataCite Kernel and f-uji vocab</p>
 </body>
 </html>
