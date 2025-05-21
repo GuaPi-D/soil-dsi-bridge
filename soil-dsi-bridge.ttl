@@ -29,6 +29,11 @@
     owl:versionInfo "1.0" ;
     rdfs:seeAlso    <https://purl.org/soil/> ,
                    <https://ptb.de/si/> ;
+    dcterms:relation    <https://purl.org/soil/> ,
+                        <https://ptb.de/si/> ;
+    pav:derivedFrom     <https://purl.org/soil/> ,
+                        <https://ptb.de/si/> ;
+
     dcat:distribution [
       a               dcat:Distribution ;
       dcat:downloadURL <https://w3id.org/soil-dsi-bridge/soil-dsi-bridge.ttl> ;
