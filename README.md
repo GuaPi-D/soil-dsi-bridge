@@ -21,7 +21,7 @@ Eine FAIR Brückenontologie, die zentrale semantische Elemente der SOIL- und D-S
 ### 项目概述 🚀
 
 * **名称**：Bridge Ontology: SOIL ↔ D-SI(DCC)
-* **Persistent ID**：[https://w3id.org/soil-dsi-bridge](https://w3id.org/projects/soil-dsi-bridge)
+* **Persistent ID**：[https://w3id.org/soil-dsi-bridge](https://w3id.org/soil-dsi-bridge)
 * **版本**：1.0
 * **许可协议**：CC BY 4.0（[查看协议](https://creativecommons.org/licenses/by/4.0/)）
 * **作者**：Z. D.（ORCID: [0009-0004-9085-4516](https://orcid.org/0009-0004-9085-4516)）、K. W.
@@ -69,7 +69,7 @@ Z. D. (2025). Bridge Ontology: SOIL ↔ D-SI. Version 1.0. CC BY 4.0. Available 
 ### Project Overview 🚀
 
 * **Name**: Bridge Ontology: SOIL ↔ D-SI(DCC)
-* **Persistent ID**: [https://w3id.org/projects/soil-dsi-bridge](https://w3id.org/projects/soil-dsi-bridge)
+* **Persistent ID**: [https://w3id.org/soil-dsi-bridge](https://w3id.org/soil-dsi-bridge)
 * **Version**: 1.0
 * **License**: CC BY 4.0 ([see details](https://creativecommons.org/licenses/by/4.0/))
 * **Authors**: Z. D. (ORCID: [0009-0004-9085-4516](https://orcid.org/0009-0004-9085-4516)), K. W.
@@ -107,7 +107,7 @@ Or reference in OWL/XML:
 ### Citation 📖
 
 ```
-Z. D. (2025). Bridge Ontology: SOIL ↔ D-SI. Version 1.0. CC BY 4.0. Available at https://w3id.org/projects/soil-dsi-bridge
+Z. D. (2025). Bridge Ontology: SOIL ↔ D-SI. Version 1.0. CC BY 4.0. Available at https://w3id.org/soil-dsi-bridge
 ```
 
 ---
@@ -155,7 +155,7 @@ Oder in OWL/XML referenzieren:
 ### Zitationsweise 📖
 
 ```
-Z. D. (2025). Brückenontologie: SOIL ↔ D-SI. Version 1.0. CC BY 4.0. Verfügbar unter https://w3id.org/projects/soil-dsi-bridge
+Z. D. (2025). Brückenontologie: SOIL ↔ D-SI. Version 1.0. CC BY 4.0. Verfügbar unter https://w3id.org/soil-dsi-bridge
 ```
 
 ---
