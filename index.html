@@ -16,7 +16,9 @@
       "fujiformat": "https://f-uji.net/vocab/data/format/",
       "fujimetadata": "https://f-uji.net/vocab/metadata/standards/",
       "fujimeta": "https://f-uji.net/vocab/metadata/property/",
-      "access_condition": "https://f-uji.net/vocab/access_condition"
+      "access_condition": "https://f-uji.net/vocab/access_condition",
+      "datacite": "https://schema.datacite.org/meta/kernel-4.3/",
+      "relationType": "http://purl.org/dc/terms/relation"
     },
     "@type": "Dataset",
     "name": "Bridge Ontology: SOIL ↔ D-SI (DCC)",
@@ -78,6 +80,32 @@
     "variableMeasured": [
       {"@type": "PropertyValue", "name": "MeasurementResult"},
       {"@type": "PropertyValue", "name": "CoverageInterval"}
+    ],
+
+    "relatedIdentifier": [
+      {
+        "relatedIdentifier": "https://w3id.org/soil",
+        "relatedIdentifierType": "URL",
+        "relationType": "IsSourceOf",
+        "resourceTypeGeneral": "Dataset"
+      },
+      {
+        "relatedIdentifier": "https://w3id.org/dsi",
+        "relatedIdentifierType": "URL",
+        "relationType": "IsSourceOf",
+        "resourceTypeGeneral": "Dataset"
+      },
+      {
+        "relatedIdentifier": "https://github.com/MetrologyResearch/soil-dsi-bridge",
+        "relatedIdentifierType": "URL",
+        "relationType": "IsSupplementTo",
+        "resourceTypeGeneral": "Software"
+      }
+    ],
+
+    "dct:references": [
+      {"@id": "https://w3id.org/soil"},
+      {"@id": "https://w3id.org/dsi"}
     ]
   }
   </script>
