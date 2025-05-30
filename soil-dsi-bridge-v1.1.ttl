@@ -1,0 +1,117 @@
+@prefix : <https://w3id.org/soil-dsi-bridge#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcc: <http://ptb.de/dcc#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix si: <https://ptb.de/si#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix m4i: <http://w3id.org/nfdi4ing/metadata4ing#> .
+@base <https://w3id.org/soil-dsi-bridge#> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+@prefix pav:    <http://purl.org/pav/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+<https://w3id.org/soil-dsi-bridge>
+    a               owl:Ontology,
+                    dcat:Dataset ;                     # <— 声明为数据集
+    dcterms:title  "Bridge Ontology between SOIL and D-SI"@en ,
+                   "Brückenontologie zwischen SOIL und D-SI"@de ;
+    dcterms:description
+                   "This bridge ontology aligns core semantic elements between the SOIL and D-SI ontologies, enabling FAIR measurement data exchange."@en ;
+    dcterms:creator <https://orcid.org/0000-0004-9085-4516> ;
+    dcterms:creator [ a foaf:Person ; foaf:name "Kang Wang" ] ;
+    dcterms:created "2025-05-20"^^xsd:date ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:format  "text/turtle" ;                   # <— 明确媒体类型
+    owl:versionInfo "1.1" ;
+    rdfs:seeAlso    <https://purl.org/soil/> ,
+                   <https://ptb.de/si/> ;
+    dcterms:relation    <https://purl.org/soil/> ,
+                        <https://ptb.de/si/> ;
+    pav:derivedFrom     <https://purl.org/soil/> ,
+                        <https://ptb.de/si/> ;
+
+    dcat:distribution [
+      a               dcat:Distribution ;
+      dcat:downloadURL <https://w3id.org/soil-dsi-bridge/soil-dsi-bridge.ttl> ;
+      dcat:mediaType   "text/turtle" ;
+      dcat:byteSize    6044 ;
+    ] ;
+    pav:createdBy   <https://orcid.org/0000-0004-9085-4516> ;
+    pav:createdOn   "2025-05-20"^^xsd:date ;
+    .
+#################################################################
+#    Classes
+#################################################################
+
+###   Typen
+qudt:QuantityKind
+    a owl:Class;
+    owl:equivalentClass si:QuantityType ;
+    rdfs:comment "Links observable properties in SOSA to quantity types in D-SI."@en ;
+    rdfs:comment "Verbindet beobachtbare Eigenschaften in SOSA mit Größentypen in D-SI."@de ;
+    rdfs:comment "文献指出在 所测量量的种类（如长度、温度等）"@zh.
+
+
+###  Ergebniswerte 
+sosa:Result 
+    a owl:Class ;
+    owl:equivalentClass si:QuantityValue;
+    rdfs:comment "Aligns the concept of a result in SOSA with quantity values in D-SI."@en ;
+    rdfs:comment "Gleicht das Konzept eines Ergebnisses in SOSA mit Größenwerten in D-SI ab."@de ;
+    rdfs:comment "文献指出在 QUDT 模型中 “sosa:Result 可以视为 qudt:QuantityValue"@zh.
+
+###   Calibration Item
+
+
+#################################################################
+#    Data properties
+#################################################################
+###  Werte
+qudt:value
+    a owl:DatatypeProperty;
+    owl:equivalentProperty si:hasvalue;
+    rdfs:comment "Maps numerical values between QUDT and D-SI."@en ;
+    rdfs:comment "Ordnet numerische Werte zwischen QUDT und D-SI zu."@de ;
+    rdfs:comment "qudt:value属性通常用于表示量值的数值,即一个 QuantityValue 实例所承载的具体数值。"@zh.
+
+
+###  Zeitstempel
+sosa:resultTime 
+    a owl:DatatypeProperty;
+    owl:equivalentProperty si:hasDateTime ;
+    rdfs:comment "Relates the timestamp of a result between SOSA and D-SI."@en ;
+    rdfs:comment "Bezieht sich auf den Zeitstempel eines Ergebnisses zwischen SOSA und D-SI."@de .
+
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  Größenart
+qudt:hasQuantityKind 
+    a owl:ObjectProperty;
+    owl:equivalentProperty si:hasQuantityType ;
+    rdfs:comment "Links the quantity kind used in QUDT to the D-SI quantity type."@en ;
+    rdfs:comment "Verbindet die in QUDT verwendete Größenart mit dem D-SI-Größentyp."@de ;
+    rdfs:comment "映射为等价属性，以统一量纲种类的表示。这样一来，不论使用 QUDT 还是 D-SI 名称，都指向同一概念（如温度、质量等），避免重复定义"@zh.
+
+
+###  Maßeinheiten
+qudt:unit 
+    a owl:ObjectProperty;
+    owl:equivalentProperty si:hasSIMeasurementUnit ;
+    rdfs:comment "Aligns measurement units between QUDT and D-SI."@en ;
+    rdfs:comment "Stimmt die Maßeinheiten zwischen QUDT und D-SI ab."@de ;
+    rdfs:comment  "qudt:unit 被用于指明测量值的单位"@zh.
+
+####被校准的设备（在dcc中的语义）在soil中与之对应的应该是传感器设备
+dcc:item rdfs:subClassOf sosa:Sensor .
+
+####a Verfahren
+dcc:usedMethod rdfs:subClassOf sosa:Procedure.
