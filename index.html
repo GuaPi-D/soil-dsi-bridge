@@ -10,6 +10,7 @@
   {
     "@context": {
       "@vocab": "https://schema.org/",
+      "schema": "https://schema.org/",
       "dct": "http://purl.org/dc/terms/",
       "dcat": "http://www.w3.org/ns/dcat#",
       "pav": "http://purl.org/pav/",
@@ -60,10 +61,12 @@
       "@id": "https://f-uji.net/vocab/data/format/long-term-file-format"
     }],
 
+    "schema:license": {"@id": "https://creativecommons.org/licenses/by/4.0/"},
+    "dct:license": {"@id": "https://creativecommons.org/licenses/by/4.0/"},
+
     "fujimeta:access_level": "open",
     "access_condition": "open",
     "dct:accessRights": {"@id": "info:eu-repo/semantics/openAccess"},
-    "license": "https://creativecommons.org/licenses/by/4.0/",
 
     "distribution": [
       {
@@ -72,7 +75,8 @@
         "dct:format": {"@id": "https://f-uji.net/vocab/data/format/long-term-file-format"},
         "dcat:mediaType": "text/turtle",
         "dcat:byteSize": 17400,
-        "contentUrl": "https://w3id.org/soil-dsi-bridge/soil-dsi-bridge.ttl"
+        "contentUrl": "https://w3id.org/soil-dsi-bridge/soil-dsi-bridge.ttl",
+        "schema:license": {"@id": "https://creativecommons.org/licenses/by/4.0/"}
       }
     ],
 
